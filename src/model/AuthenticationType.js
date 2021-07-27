@@ -79,7 +79,7 @@ AuthenticationType.TypeEnum = {
    * value: "NONE"
    * @const
    */
-   NONE: "NONE"
+  NONE: "NONE"
 };
 /**
  * the authentication type

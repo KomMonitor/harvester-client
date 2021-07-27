@@ -48,10 +48,10 @@ export class SpatialDataMappingType {
         obj.sourceFeatureIdPrefix = ApiClient.convertToType(data['sourceFeatureIdPrefix'], 'String');
       if (data.hasOwnProperty('targetFeatureIdPrefix'))
         obj.targetFeatureIdPrefix = ApiClient.convertToType(data['targetFeatureIdPrefix'], 'String');
-      if (data.hasOwnProperty('sourceFeatureIdSuffix'))
-        obj.sourceFeatureIdSuffix = ApiClient.convertToType(data['sourceFeatureIdSuffix'], 'String');
-      if (data.hasOwnProperty('targetFeatureIdSuffix'))
-        obj.targetFeatureIdSuffix = ApiClient.convertToType(data['targetFeatureIdSuffix'], 'String');
+      if (data.hasOwnProperty('sourceFeatureNamePrefix'))
+        obj.sourceFeatureNamePrefix = ApiClient.convertToType(data['sourceFeatureNamePrefix'], 'String');
+      if (data.hasOwnProperty('targetFeatureNamePrefix'))
+        obj.targetFeatureNamePrefix = ApiClient.convertToType(data['targetFeatureNamePrefix'], 'String');
     }
     return obj;
   }
@@ -70,26 +70,26 @@ SpatialDataMappingType.prototype.sourceDatasetId = undefined;
 SpatialDataMappingType.prototype.targetDatasetId = undefined;
 
 /**
- * optional suffix for source dataset feature IDs
+ * optional prefix for source dataset feature IDs
  * @member {String} sourceFeatureIdPrefix
  */
 SpatialDataMappingType.prototype.sourceFeatureIdPrefix = undefined;
 
 /**
- * optional suffix for target dataset feature IDs
+ * optional prefix for target dataset feature IDs
  * @member {String} targetFeatureIdPrefix
  */
 SpatialDataMappingType.prototype.targetFeatureIdPrefix = undefined;
 
 /**
- * optional suffix for source dataset feature IDs
- * @member {String} sourceFeatureIdSuffix
+ * optional prefix for source dataset feature names
+ * @member {String} sourceFeatureNamePrefix
  */
-SpatialDataMappingType.prototype.sourceFeatureIdSuffix = undefined;
+SpatialDataMappingType.prototype.sourceFeatureNamePrefix = undefined;
 
 /**
- * optional prefix for target dataset feature IDs
- * @member {String} targetFeatureIdSuffix
+ * optional prefix for target dataset feature names
+ * @member {String} targetFeatureNamePrefix
  */
-SpatialDataMappingType.prototype.targetFeatureIdSuffix = undefined;
+SpatialDataMappingType.prototype.targetFeatureNamePrefix = undefined;
 
