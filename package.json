@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "KomMonitor_Harvester_API_to_harvesttransfer_spatial_data_from_one_instance_to_another",
   "license": "Apache 2.0",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "mocha --require @babel/register --recursive"
   },
